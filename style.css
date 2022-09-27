@@ -9,29 +9,39 @@
 
 body{
     background-color: hsl(200, 90%, 20%);
-    position: relative;
 }
 
 .flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: hsl(200, 60%, 60%);
-    width: 60%;
-    height: 500px;
-    transform: translate(35% , 25%);
-    box-shadow: 4px 4px 10px #000;
-    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    padding: 5rem;
+    border-radius: 1rem;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.item{
+    width: 100%;
+    box-shadow: 4px 4px 8px #999;
+    border-radius: 1rem;
+    cursor: pointer;
+}
 
 p{
-    color: #999;
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-size: 2rem;
     padding: 2rem;
     font-weight: bold;
+    color: #999;    
+    position: absolute;
+    top: 11px;
+    right: 0;
+
+}
+
+.text{
     font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
